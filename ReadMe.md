@@ -1,6 +1,6 @@
 # ReSolved Dataset (Reduction in Solvents)
 
-The **ReSolved** dataset is a curated benchmark designed to support machine learning and computational chemistry efforts focused on predicting redox behavior of organic molecules in solution. It provides **DFT-computed electron affinities (EA)** and **one-electron reduction potentials (E<sub>red</sub>)** and , **DFT-optimised geometries** for nearly 20k molecules across five solvents. 
+The **ReSolved** dataset is a curated benchmark designed to support machine learning and computational chemistry efforts focused on predicting redox behavior of organic molecules in solution. It provides **DFT-computed electron affinities (EA)**, **absolute one-electron reduction potentials (E<sub>red</sub>)** and **DFT-optimised geometries** for nearly 20k molecules across five solvents. 
 
 
 
@@ -14,8 +14,8 @@ The **ReSolved** dataset is a curated benchmark designed to support machine lear
   - Dimethyl sulfoxide (DMSO)  
   - Dimethylformamide (DMF)  
 - **Properties included**:  
-  - Electron affinity (EA)  
-  - One-electron reduction potential (E<sub>red</sub>) at 25°C
+  - Electron affinity (EA), eV  
+  - Absolute one-electron reduction potential (E<sub>red</sub>) in a given solvent at 25°C, eV
 
 ![ReSolved Dataset Overview](overview.png)
 
@@ -29,7 +29,7 @@ Molecules in ReSolved were selected from:
   - Carbonyl compounds (quinones, carboxylates, phenazine-derived radicals)
   - Cyanides
 
-All electronic properties were computed using **DFT at the M06-2X/def2-TZVPD** level of theory with the **SMD implicit solvent model**.
+All properties were computed at the **DFT at the M06-2X/def2-TZVPD** level of theory for the optimised geometries, frequencies at 298K, and electronic energies, and **SMD/M06-2X/cc-pVTZ** for the Gibbs free energies of solvation (van der Waals model of atomic radii).
 
 
 
